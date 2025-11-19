@@ -1,6 +1,6 @@
-import typing as t
 import torch
 import torch.nn as nn
+import typing as t
 from torch.nn import functional as F
 from einops import rearrange
 from mmengine.model import BaseModule
@@ -79,7 +79,6 @@ class SSCP(BaseModule):
         self.inter_spatial = in_spatial // spa_ratio
         
         # Embedding functions for original features
-        
         self.gx_spatial = nn.Sequential(
             nn.Conv2d(in_channels=self.in_channel, out_channels=self.inter_channel,
                     kernel_size=1, stride=1, padding=0, bias=False),
@@ -89,7 +88,6 @@ class SSCP(BaseModule):
         
         
         # Embedding functions for relation features
-    
         self.gg_spatial = nn.Sequential(
             nn.Conv2d(in_channels=self.in_spatial * 2, out_channels=self.inter_spatial,
                     kernel_size=1, stride=1, padding=0, bias=False),
@@ -98,8 +96,7 @@ class SSCP(BaseModule):
         )
         
         
-        # Networks for learning attention weights
-        
+        # Networks for learning attention weights  
         num_channel_s = 1 + self.inter_spatial
         self.W_spatial = nn.Sequential(
             nn.Conv2d(in_channels=num_channel_s, out_channels=num_channel_s//down_ratio,
@@ -112,7 +109,6 @@ class SSCP(BaseModule):
             )
 
         # Embedding functions for modeling relations
-        
         self.theta_spatial = nn.Sequential(
             nn.Conv2d(in_channels=self.in_channel, out_channels=self.inter_channel,
                             kernel_size=1, stride=1, padding=0, bias=False),
@@ -168,22 +164,22 @@ class SSCP(BaseModule):
 
         # SRGA
         b, c, h, w = x.size() # (8, 256, 16, 16)
-        theta_xs = self.theta_spatial(x)	# out_c = in_channel // cha_ratio  256 // 8 = 32  (8, 32, 16, 16)
-        phi_xs = self.phi_spatial(x)        # (8, 32, 16, 16)
-        theta_xs = theta_xs.view(b, self.inter_channel, -1) # (8, 32, 16 * 16) = (8, 32, 256)
-        theta_xs = theta_xs.permute(0, 2, 1)  # (8, 256, 32)
-        phi_xs = phi_xs.view(b, self.inter_channel, -1) # (8, 32, 16 * 16) = (8, 32, 256)
-        Gs = torch.matmul(theta_xs, phi_xs) # (8, 256, 256)
-        Gs_in = Gs.permute(0, 2, 1).view(b, h*w, h, w) # ->(8, 256, 256) -> (8, 256, 16, 16)
-        Gs_out = Gs.view(b, h*w, h, w) # (8, 256, 16, 16)
-        Gs_joint = torch.cat((Gs_in, Gs_out), 1) # (8, 512, 16, 16)
-        Gs_joint = self.gg_spatial(Gs_joint) # -> in_spatial // spa_ratio  # 256 // 16 = 16 out_c = inter_sp = 16 -> (8, 16, 16, 16)
+        theta_xs = self.theta_spatial(x)	
+        phi_xs = self.phi_spatial(x)        
+        theta_xs = theta_xs.view(b, self.inter_channel, -1) 
+        theta_xs = theta_xs.permute(0, 2, 1)  
+        phi_xs = phi_xs.view(b, self.inter_channel, -1) 
+        Gs = torch.matmul(theta_xs, phi_xs) 
+        Gs_in = Gs.permute(0, 2, 1).view(b, h*w, h, w) 
+        Gs_out = Gs.view(b, h*w, h, w) 
+        Gs_joint = torch.cat((Gs_in, Gs_out), 1) 
+        Gs_joint = self.gg_spatial(Gs_joint) 
     
-        g_xs = self.gx_spatial(x) # (8, 32, 16, 16)
-        g_xs = torch.mean(g_xs, dim=1, keepdim=True) # (8, 1, 16, 16)
-        ys = torch.cat((g_xs, Gs_joint), 1)  # (8, 16 + 1, 16, 16)
+        g_xs = self.gx_spatial(x) 
+        g_xs = torch.mean(g_xs, dim=1, keepdim=True) 
+        ys = torch.cat((g_xs, Gs_joint), 1)  
 
-        W_ys = self.W_spatial(ys) # (8, 1, 16, 16)
+        W_ys = self.W_spatial(ys) 
         
         x = F.sigmoid(W_ys.expand_as(x)) * x  
         
