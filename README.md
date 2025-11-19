@@ -6,6 +6,6 @@ Official implementation for the paper "A Spatial Semantics and Continuity Percep
 By:
 [BaiduNetDisk-Link](https://pan.baidu.com/s/1QA0YQBXoB6QQQv97GzMzOw?pwd=abcd)
 
-## SSCP (Spatial Semantics and Continuity Perception) Attention codes path
+## SSCP path
 code/SSCP.py
 
