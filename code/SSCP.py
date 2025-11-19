@@ -25,7 +25,7 @@ class SSCP(BaseModule):
             down_ratio=8
 
     ):
-        super(SMSA_RGAs_add22_PCSA, self).__init__()
+        super(SSCP, self).__init__()
         self.dim = dim
         self.head_num = head_num
         self.head_dim = dim // head_num
@@ -135,9 +135,9 @@ class SSCP(BaseModule):
 
         # MSA_processed_x + SRGA_processed(MSA_x) -> CSA
 
-        #MSA
+        # MSA
         b, c, h_, w_ = x.size()
-        # Spatial attention priority calculation:SMSA
+        # Spatial attention priority calculation
         # (B, C, H)
         x_h = x.mean(dim=3)
         l_x_h, g_x_h_s, g_x_h_m, g_x_h_l = torch.split(x_h, self.group_chans, dim=1)
