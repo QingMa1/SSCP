@@ -4,7 +4,7 @@ Official implementation for the paper "A Spatial Semantics and Continuity Percep
 
 ## Downloading the Dataset
 By:
-[BaiduNetDisk-Link](https://pan.baidu.com/s/1QA0YQBXoB6QQQv97GzMzOw?pwd=abcd)
+[BaiduNetDisk-Link]([链接：https://pan.baidu.com/s/1wygwa15uOreD3-z_MT3wPw?pwd=opac)
 
 ## SSCP path
 code/SSCP.py
