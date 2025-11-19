@@ -2,7 +2,7 @@
 
 ## Downloading the Dataset
 By:
-[BaiduNetDisk-Link]
+[BaiduNetdisk-Link]
 (https://pan.baidu.com/s/1wygwa15uOreD3-z_MT3wPw?pwd=opac)
 
 ## SSCP path
