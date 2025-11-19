@@ -5,7 +5,6 @@ from torch.nn import functional as F
 from einops import rearrange
 from mmengine.model import BaseModule
 
-
 # MSA_processed_x + SRGA_processed(MSA_x) -> CSA
 class SSCP(BaseModule):
     def __init__(
