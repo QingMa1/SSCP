@@ -5,6 +5,3 @@ By:
 [Baidu Netdisk-Link]
 (https://pan.baidu.com/s/1wygwa15uOreD3-z_MT3wPw?pwd=opac)
 
-## SSCP path
-code/SSCP.py
-
