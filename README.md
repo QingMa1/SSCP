@@ -1,6 +1,6 @@
 # A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection
 
-##the HSRW-CD dataset:
+## the HSRW-CD dataset:
 
 
 The HSRW-CD dataset is the first high spatial resolution dataset
