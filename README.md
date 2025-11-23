@@ -1,7 +1,6 @@
 # A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection
 
-## The HSRW-CD Dataset:
-
+## The HSRW-CD Dataset
 
 The HSRW-CD dataset is the first high spatial resolution dataset
 dedicated to WBCD. It comprises 2,085 image pairs spanning diverse
@@ -13,7 +12,6 @@ Earth. The annotation of the dataset is carried out by an expert group of Earth 
 applications, which guarantees high label accuracy. In addition, the bi-temporal imaages have a high spatial resolution finer than 3 meters, each sized at 512 × 512 pixels.
 Following a 7:1:2 proportion, the image dataset is randomly divided into training, validation, and test subsets according to a 7:1:2 proportion, leading to training, validation,
 and test sets containing 1,476, 203, and 406 independent image pairs.
-
 
 Obtain it by:
 [Baidu Netdisk-Link]
