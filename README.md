@@ -10,7 +10,7 @@ reservoirs. These image pairs are from more than 7 cities or districts in China,
 bi-temporal images are manually collected from high-resolution satellites and Google
 Earth. The annotation of the dataset is carried out by an expert group of Earth vision
 applications, which guarantees high label accuracy. In addition, the bi-temporal imaages have a high spatial resolution finer than 3 meters, each sized at 512 × 512 pixels.
-Following a 7:1:2 proportion, the image dataset is randomly divided into training, validation, and test subsets according to a 7:1:2 proportion, leading to training, validation,
+Following a 7:1:2 proportion, the image dataset is randomly divided into training, validation, and test subsets, leading to training, validation,
 and test sets containing 1,476, 203, and 406 independent image pairs.
 
 Obtain it by:
