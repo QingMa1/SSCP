@@ -109,13 +109,13 @@ class SSCP(BaseModule):
             )
 
         # Embedding functions for modeling relations
-        self.theta_spatial = nn.Sequential(
+        self.phi_spatial = nn.Sequential(
             nn.Conv2d(in_channels=self.in_channel, out_channels=self.inter_channel,
                             kernel_size=1, stride=1, padding=0, bias=False),
             nn.BatchNorm2d(self.inter_channel),
             nn.ReLU()
         )
-        self.phi_spatial = nn.Sequential(
+        self.eta_spatial = nn.Sequential(
             nn.Conv2d(in_channels=self.in_channel, out_channels=self.inter_channel,
                         kernel_size=1, stride=1, padding=0, bias=False),
             nn.BatchNorm2d(self.inter_channel),
@@ -163,13 +163,13 @@ class SSCP(BaseModule):
         
 
         # SRGA
-        b, c, h, w = x.size() # (8, 256, 16, 16)
-        theta_xs = self.theta_spatial(x)	
-        phi_xs = self.phi_spatial(x)        
-        theta_xs = theta_xs.view(b, self.inter_channel, -1) 
-        theta_xs = theta_xs.permute(0, 2, 1)  
+        b, c, h, w = x.size() 
+        phi_xs = self.phi_spatial(x)	
+        eta_xs = self.eta_spatial(x)        
         phi_xs = phi_xs.view(b, self.inter_channel, -1) 
-        Gs = torch.matmul(theta_xs, phi_xs) 
+        phi_xs = phi_xs.permute(0, 2, 1)  
+        eta_xs = eta_xs.view(b, self.inter_channel, -1) 
+        Gs = torch.matmul(phi_xs, eta_xs) 
         Gs_in = Gs.permute(0, 2, 1).view(b, h*w, h, w) 
         Gs_out = Gs.view(b, h*w, h, w) 
         Gs_joint = torch.cat((Gs_in, Gs_out), 1) 
