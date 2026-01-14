@@ -1,4 +1,4 @@
-# A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection
+# A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection ([ArXiv](https://arxiv.org/abs/2511.16143v1))
 
 ## The HSRW-CD Dataset
 
