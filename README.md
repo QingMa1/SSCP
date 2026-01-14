@@ -3,7 +3,7 @@
 ## The HSRW-CD Dataset
 
 The HSRW-CD dataset is the first high spatial resolution dataset
-dedicated to WBCD. It comprises 2,085 image pairs spanning diverse
+dedicated to WBCD (Water Body Change Detection). It comprises 2,085 image pairs spanning diverse
 geographical regions and environmental contexts, encompassing various water body
 types such as urban waterways, river systems, lacustrine environments, and artificial
 reservoirs. These image pairs are from more than 7 cities or districts in China, including Beijing, Chongqing, Chengdu, Hangzhou, Wuhan, Shenzhen, and Shanghai. The
