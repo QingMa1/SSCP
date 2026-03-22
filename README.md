@@ -17,3 +17,8 @@ Obtain it by:
 [Baidu Netdisk-Link]
 (https://pan.baidu.com/s/1wygwa15uOreD3-z_MT3wPw?pwd=opac)
 
+## Pre-trained Model Weights and Log Files
+
+Obtain it by:
+[Quark Netdisk-Link]
+(https://pan.quark.cn/s/476e779db6d1?pwd=huyB)
