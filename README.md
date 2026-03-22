@@ -19,6 +19,6 @@ Obtain it by:
 
 ## Pre-trained Model Weights and Log Files
 
-Obtain it by:
+Obtain these by:
 [Quark Netdisk-Link]
 (https://pan.quark.cn/s/476e779db6d1?pwd=huyB)
