@@ -6,7 +6,7 @@ Within the scope of our current knowledge, we construct the first high spatial r
 Obtain it by:
 [Baidu Netdisk Link](https://pan.baidu.com/s/1wygwa15uOreD3-z_MT3wPw?pwd=opac)
 
-## SSCP attention
+## SSCP Attention
 
 Focusing on the visual similarity between temporary water bodies and moisture-rich vegetation, as well as the structural continuity of water bodies, we propose a task-specific SSCP attention module. Different from conventional attention mechanisms that mainly focus on screening important feature information by recalibrating feature weights to judge which features contribute to prediction, SSCP introduces a semantic-structural collaborative refinement paradigm, which explicitly models the spatial organization rules of water body features through cross-scale semantic extraction and global structural enhancement. As a plug-and-play module, SSCP can be seamlessly integrated into mainstream CNN- and Transformer-based frameworks.
 
