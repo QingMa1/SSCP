@@ -16,3 +16,6 @@ Obtain it by:
 Obtain these by:
 [Quark Netdisk-Link]
 (https://pan.quark.cn/s/d72ceb2158b3?pwd=5TUU)
+
+## News
+2026.09.13: This work is accepted by Pattern Recognition.
