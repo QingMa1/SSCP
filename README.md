@@ -23,7 +23,7 @@ Obtain these by:
 ## 📖Citation
 If you find this work useful for your research, please feel free to cite it.
 ```bibtex
-}@article{ma2026spatial,
+@article{ma2026spatial,
   title={A spatial semantics and continuity perception attention for remote sensing water body change detection},
   author={Ma, Quanqing and Chen, Jiaen and Wang, Peng and Zheng, Yao and Zhao, Qingzhan and Zheng, Yuchen},
   journal={Pattern Recognition},
