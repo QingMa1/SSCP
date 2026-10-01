@@ -24,9 +24,14 @@ Obtain these by:
 If you find this work useful for your research, please feel free to cite it.
 @article{ma2026spatial,
   title={A spatial semantics and continuity perception attention for remote sensing water body change detection},
+  
   author={Ma, Quanqing and Chen, Jiaen and Wang, Peng and Zheng, Yao and Zhao, Qingzhan and Zheng, Yuchen},
+  
   journal={Pattern Recognition},
+  
   pages={114925},
+  
   year={2026},
+  
   publisher={Elsevier}
 }
