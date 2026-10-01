@@ -18,7 +18,7 @@ Obtain these by:
 ## 🔥News
 2026.09.13: Our work is accepted by Pattern Recognition.
 
-2026.09.29：This paper is available online.
+2026.09.29: This paper is available online.
 
 ## 📖Citation
 If you find this work useful for your research, please feel free to cite it.
