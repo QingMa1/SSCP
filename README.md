@@ -16,6 +16,8 @@ Obtain these by:
 [Quark Netdisk Link](https://pan.quark.cn/s/d72ceb2158b3?pwd=5TUU)
 
 ## 🔥News
+2025.11.20: Original manuscript is published in [arXiv](https://arxiv.org/abs/2511.16143).
+
 2026.09.13: Our work is accepted by Pattern Recognition.
 
 2026.09.29: [This paper](https://doi.org/10.1016/j.patcog.2026.114925) is available online.
