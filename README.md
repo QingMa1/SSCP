@@ -1,4 +1,4 @@
-# [A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection](https://doi.org/10.1016/j.patcog.2026.114925)
+# A Spatial Semantics and Continuity Perception Attention for Remote Sensing Water Body Change Detection ([published by Pattern Recognition](https://doi.org/10.1016/j.patcog.2026.114925))
 
 ## 📊The Proposed HSRW-CD
 Within the scope of our current knowledge, we construct the first high spatial resolution, large-volume, and application-oriented dataset HSRW-CD for remote sensing Water Body Change Detection (WBCD), featuring imagery with a spatial resolution finer than 3 m, a collection of 2,085 bi-temporal image pairs, and various water body types covering diverse geographic regions. Specifically, all bi-temporal images are 512 $\times$ 512 pixels in size. The image dataset is divided into training, validation, and test subsets via stratified random sampling based on city distribution and water body types at a 7:1:2 ratio, yielding 1,476, 203, and 406 independent image pairs for each subset. Due to the properties of the HSRW-CD dataset, it will further enhance the application of WBCD in sophisticated water resource management.
@@ -16,7 +16,7 @@ Obtain these by:
 [Quark Netdisk Link](https://pan.quark.cn/s/d72ceb2158b3?pwd=5TUU)
 
 ## 🔥News
-2025.11.20: Original manuscript is published in [arXiv](https://arxiv.org/abs/2511.16143).
+2025.11.20: The original manuscript has been posted on [arXiv](https://arxiv.org/abs/2511.16143).
 
 2026.09.13: Our work is accepted by Pattern Recognition.
 
