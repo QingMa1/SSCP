@@ -20,7 +20,7 @@ Obtain these by:
 
 2026.09.13: Our work is accepted by Pattern Recognition.
 
-2026.09.29: [The fianal version](https://doi.org/10.1016/j.patcog.2026.114925) is available online.
+2026.09.29: [The final version](https://doi.org/10.1016/j.patcog.2026.114925) is available online.
 
 ## 📖Citation
 If you find this work useful for your research, please feel free to cite it.
